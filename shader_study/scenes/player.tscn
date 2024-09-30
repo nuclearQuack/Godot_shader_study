@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvedti7c30ooc"]
+[gd_scene load_steps=4 format=3 uid="uid://bvedti7c30ooc"]
 
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_80b0m"]
 [ext_resource type="PackedScene" uid="uid://bdq6ajic6fjrf" path="res://scenes/models/mixamo_base.glb" id="1_108jf"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_xl7uc"]
 radius = 0.3
 
 [node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_80b0m")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01187, 0)
